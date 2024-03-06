@@ -3,7 +3,7 @@ import Create from './Create'
 function Home() {
   const[todos,settodos]=useState([])
   return (
-    <div>
+    <div className='Home'>
       <h2>todo list</h2>
       <Create />
       {
