@@ -1,9 +1,26 @@
-import React from 'react'
-
-function home() {
+import React, {useState} from 'react'
+import Create from './Create'
+function Home() {
+  const[todos,settodos]=useState([])
   return (
-    <div>home</div>
+    <div>
+      <h2>todo list</h2>
+      <Create />
+      {
+        todos.length === 0 ?
+        <div><h2>No Record</h2></div>
+        :
+        todos.map(todo => (
+          <div>
+            {todo}
+
+          </div>
+          
+          
+         ) )
+      }
+    </div>
   )
 }
 
-export default home
+export default Home
