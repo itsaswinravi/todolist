@@ -2,7 +2,8 @@ const mongoose =require('mongoose')
 const todoSchema = new mongoose .Schema({
     task : String,
     done:{
-        type:Boolean
+        type:Boolean,
+        default: false
     }
 })
 
