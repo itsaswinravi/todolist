@@ -1,5 +1,5 @@
 const mongoose =require('mongoose')
-const todoScheme = new mongoose .Schema({
+const todoSchema = new mongoose .Schema({
     task : String
 })
 
