@@ -4,7 +4,7 @@ import axios from 'axios'
 function Create() {
   const [task,setTask] = useState()
     const handleAdd =() => {
-        axios.post('https://todolist-ngli.onrender.com/add',{task: task})
+        axios.post('http://localhost:3001/add',{task: task})
         .then(result => {
           location.reload()
         }

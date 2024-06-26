@@ -5,6 +5,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    {/* strictmode is used to check for errors in the code and fix them in the code itself . it is used in development mode only .  */}
     <App />
   </React.StrictMode>,
 )

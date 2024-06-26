@@ -7,19 +7,19 @@ function Home() {
   const[todos,settodos]=useState([])
   useEffect(()=>
   {
-    axios.get('https://todolist-ngli.onrender.com/get')
+    axios.get('http://localhost:3001/get')
     .then(result => settodos(result.data))
     .catch(err => console.log(err))
   },[])
   const handleEdit =(id) => {
-    axios.put('https://todolist-ngli.onrender.com/update/'+id)
+    axios.put('http://localhost:3001/update/'+id)
     .then(result => {
       location.reload()
     })
     .catch(err => console.log(err)) 
   }
   const handleDelete =(id) => {
-    axios.delete('https://todolist-ngli.onrender.com/delete/'+id)
+    axios.delete('http://localhost:3001/delete/'+id)
     .then(result => {
       location.reload()
     })

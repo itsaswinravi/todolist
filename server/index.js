@@ -6,6 +6,7 @@ const todoModel =require('./Models/todo')
 require('dotenv').config()
 const app = express()
 app.use(cors())
+// cors is used to allow cross origin resource sharing
 app.use(express.json())
 db_url= process.env.db_url
 // console.log("bbbhbj hjbm",db_url)
